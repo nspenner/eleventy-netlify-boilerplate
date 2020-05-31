@@ -1,0 +1,8 @@
+{
+    "layout": "layouts/review.njk",
+    "permalink": "reviews/{{ title | slug }}/index.html",
+    "tags": [
+      "review"
+    ]
+  }
+  

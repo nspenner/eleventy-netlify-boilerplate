@@ -3,7 +3,7 @@ title: Final Fantasy VII Remake Review
 date: 2020-05-31T00:00:00.000Z
 author: Nathan Minchow
 tags:
-  - reviews
+  - jrpg
 ---
 Final Fantasy VII Remake is here! Wow!
 
