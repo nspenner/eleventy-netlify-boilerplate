@@ -4,6 +4,6 @@ title: Reviews
 date: 2017-01-01
 permalink: /reviews/index.html
 eleventyNavigation:
-  key: Review
+  key: Reviews
   order: 5
 ---
