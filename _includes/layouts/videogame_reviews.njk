@@ -7,6 +7,6 @@ permalink: /reviews/index.html
 
 {{ layoutContent | safe }}
 
-{% set reviewslist = collections.review %}
-{% set filteredTags = ["review"] %}
+{% set reviewslist = collections.videogameReviews %}
+{% set filteredTags = ["review", "videogame"] %}
 {% include "components/reviewslist.njk" %}

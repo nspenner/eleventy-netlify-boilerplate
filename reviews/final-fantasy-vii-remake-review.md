@@ -4,6 +4,7 @@ date: 2020-05-31T00:00:00.000Z
 author: Nathan Minchow
 tags:
   - jrpg
+  - videogame
 ---
 Final Fantasy VII Remake is here! Wow!
 

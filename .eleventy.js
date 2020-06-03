@@ -74,6 +74,14 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("styles");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
 
+  eleventyConfig.addCollection("videogameReviews", function (collectionApi) {
+    return collectionApi.getFilteredByTags("review", "videogame");
+  });
+
+  eleventyConfig.addFilter("containsValue", function(value, array) {
+    return array.includes(value);
+  });
+
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");

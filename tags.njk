@@ -17,6 +17,7 @@ renderData:
 <h1>Tagged “{{ tag }}”</h1>
 
 {% set reviewslist = collections[ tag ] %}
+{% set filteredTags = [tag] %}
 {% include "components/reviewslist.njk" %}
 
 <nav>

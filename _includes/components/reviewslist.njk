@@ -23,10 +23,17 @@
 			{% if review.data.tags %}
 				<p>
 					{% for tag in review.data.tags %}
-		  			{%- if tag != "review" -%}
-		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
-		  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-		  			{%- endif -%}
+					{%- if filteredTags -%}
+						{# If we have filtered tags, we only want to display tags that are not filtered for this view #}
+						{% if not tag|containsValue(filteredTags) %}
+							{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+		  					<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+						{% endif %}
+					{%- else -%}
+					{# If we don't have filtered tags, just print all tags #}
+						{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+		  				<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+					{%- endif -%}
 					{% endfor %}
 				</p>
 			{% endif %}
