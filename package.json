@@ -5,7 +5,9 @@
   "scripts": {
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
-    "debug": "DEBUG=* npx eleventy"
+    "debug": "DEBUG=* npx eleventy",
+    "dev": "npx eleventy --serve",
+    "netlify-local": "npx netlify-cms-proxy-server"
   },
   "repository": {
     "type": "git",
