@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Source+Serif+Pro&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&family=Source+Serif+Pro&display=swap"
       rel="stylesheet"
     />
     <title>Tests and Prototypes</title>
@@ -17,13 +17,9 @@
       </div>
       <nav class="header__navigation">
         <ul class="navigation__categories">
-          <li class="bg--blue txt-light">
+          <li class="bg--blue txt--light">
             <a href=""
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                style="width: auto; fill: currentColor;"
-                viewBox="0 0 512 512"
-              >
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <title>ionicons-v5-g</title>
                 <path
                   d="M478.07,356.88,439,151c-8.86-40.35-23-71-88-71H145c-66,0-79.14,30.65-88,71L18,356.88C11,391,22.43,418.13,51.37,428.69S103,423,119.18,391.3l15.42-30.52A16,16,0,0,1,148.88,352H347.16a16,16,0,0,1,14.28,8.78l15.42,30.52c16.14,31.7,38.88,48,67.81,37.39S485,391,478.07,356.88ZM224,240H176v48H144V240H96V208h48V160h32v48h48Zm68,4a20,20,0,1,1,20-20A20,20,0,0,1,292,244Zm44,44a20,20,0,1,1,20-20A20,20,0,0,1,336,288Zm0-88a20,20,0,1,1,20-20A20,20,0,0,1,336,200Zm44,44a20,20,0,1,1,20-20A20,20,0,0,1,380,244Z"
@@ -32,13 +28,9 @@
               <span>Video Games</span>
             </a>
           </li>
-          <li class="bg--red txt-light">
+          <li class="bg--red txt--light">
             <a href=""
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                style="width: auto; fill: currentColor;"
-                viewBox="0 0 512 512"
-              >
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <title>ionicons-v5-g</title>
                 <rect
                   x="48"
@@ -147,7 +139,7 @@
                   ry="28"
                   style="
                     fill: none;
-                    stroke: #;
+                    stroke: currentColor;
                     stroke-linejoin: round;
                     stroke-width: 32px;
                   "
@@ -199,19 +191,17 @@
             </a>
           </li>
           <li class="bg--green">
-            <a href="" class="txt-dark"
+            <a href="" class="txt--dark"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 preserveAspectRatio="xMidYMid meet"
-                class="txt-light"
+                class="txt--light"
                 viewBox="0 0 24 24"
                 style="
                   -ms-transform: rotate(360deg);
                   -webkit-transform: rotate(360deg);
                   transform: rotate(360deg);
-                  width: auto;
-                  fill: currentColor;
                 "
               >
                 <path
@@ -229,19 +219,18 @@
               <span>Books</span>
             </a>
           </li>
-          <li class="bg--orange txt-dark">
+          <li class="bg--orange txt--dark">
             <a href=""
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 preserveAspectRatio="xMidYMid meet"
                 viewBox="0 0 24 24"
-                class="txt-light"
+                class="txt--light"
                 style="
                   -ms-transform: rotate(360deg);
                   -webkit-transform: rotate(360deg);
                   transform: rotate(360deg);
-                  width: auto;
                   fill: currentColor;
                 "
               >
@@ -274,7 +263,6 @@
                 -ms-transform: rotate(360deg);
                 -webkit-transform: rotate(360deg);
                 transform: rotate(360deg);
-                width: auto;
               "
             >
               <path
@@ -299,7 +287,7 @@
     </header>
     <main>
       <header class="headline">
-        <article class="headline__article--main">
+        <article class="headline__article--main bg--slate txt--light">
           <img
             src="./final_fantasy_vii.jpeg"
             alt="Final Fantasy VII Screenshot of main character Cloud in front of the city of Midgar"
@@ -308,119 +296,245 @@
             <h2>Final Fantasy VII Remake: The RORT Review</h2>
             <p>Final Fantasy is back, baby.</p>
             <div class="meta-information">
-              <span class="meta-tag">GAMES</span>
+              <span class="meta-tag bg--blue txt--light">Games</span>
               <span>By <a href="">Nathan Minchow</a></span>
             </div>
           </div>
         </article>
         <article class="headline__article">
-          <h2>The Quest for El Dorado: The RORT Review</h2>
-          <p>
-            This clever deckbuilder combines the best of classic race games with
-            a healthy splash of Dominion to make something great.
-          </p>
-          <span>GAMES</span>
-          <span>By Nathan Minchow</span>
-        </article>
-        <article>
-          <h2>The Quest for El Dorado: The RORT Review</h2>
-          <p>
-            This clever deckbuilder combines the best of classic race games with
-            a healthy splash of Dominion to make something great.
-          </p>
-          <span>GAMES</span>
-          <span>By Nathan Minchow</span>
-        </article>
-        <article>
           <div class="article__summary">
+            <img
+              src="./el_dorado.jpeg"
+              alt="Picture of the board from The Quest for El Dorado"
+            />
             <h2>The Quest for El Dorado: The RORT Review</h2>
             <p>
               This clever deckbuilder combines the best of classic race games
               with a healthy splash of Dominion to make something great.
             </p>
-            <span>GAMES</span>
-            <span>By Nathan Minchow</span>
+            <div class="meta-information">
+              <span class="meta-tag bg--orange txt--dark">Board Games</span>
+              <span class="meta--author"
+                >By <a href="">Nathan Minchow</a></span
+              >
+            </div>
+          </div>
+        </article>
+        <article class="headline__article">
+          <div class="article__summary">
+            <img
+              src="./avatar.jpeg"
+              alt="Screen capture of Aang and Toph from Avatar the Last Airbender"
+            />
+            <h2>Avatar: The Last Airbender: The RORT Review</h2>
+            <p>
+              More than just a children's show.
+            </p>
+            <div class="meta-information">
+              <span class="meta-tag bg--red txt--light">Television</span>
+              <span class="meta--author"
+                >By <a href="">Nathan Minchow</a></span
+              >
+            </div>
+          </div>
+        </article>
+        <article class="headline__article">
+          <div class="article__summary">
+            <img
+              src="./el_dorado.jpeg"
+              alt="Picture of the board from The Quest for El Dorado"
+            />
+            <h2>The Quest for El Dorado: The RORT Review</h2>
+            <p>
+              This clever deckbuilder combines the best of classic race games
+              with a healthy splash of Dominion to make something great.
+            </p>
+            <div class="meta-information">
+              <span class="meta-tag bg--orange txt--dark">Board Games</span>
+              <span class="meta--author"
+                >By <a href="">Nathan Minchow</a></span
+              >
+            </div>
           </div>
         </article>
       </header>
-      <section>
-        <h2>All Reviews</h2>
-        <ol>
+      <section class="reviews__section">
+        <h2 class="uppercase">All Reviews</h2>
+        <ol class="reviews__list">
           <li>
-            <article>
-              <h2>The Quest for El Dorado: The RORT Review</h2>
-              <p>
-                This clever deckbuilder combines the best of classic race games
-                with a healthy splash of Dominion to make something great.
-              </p>
-              <span>GAMES</span>
-              <span>By Nathan Minchow</span>
+            <article class="list__article">
+              <img
+                src="./el_dorado.jpeg"
+                alt="Picture of the board from The Quest for El Dorado"
+              />
+              <div class="article__summary">
+                <h2>The Quest for El Dorado: The RORT Review</h2>
+                <p>
+                  This clever deckbuilder combines the best of classic race
+                  games with a healthy splash of Dominion to make something
+                  great.
+                </p>
+                <div class="meta-information">
+                  <span class="meta-tag bg--orange txt--dark">Board Games</span>
+                  <span class="meta--author"
+                    >By <a href="">Nathan Minchow</a></span
+                  >
+                </div>
+              </div>
             </article>
           </li>
           <li>
-            <article>
-              <h2>The Quest for El Dorado: The RORT Review</h2>
-              <p>
-                This clever deckbuilder combines the best of classic race games
-                with a healthy splash of Dominion to make something great.
-              </p>
-              <span>GAMES</span>
-              <span>By Nathan Minchow</span>
+            <article class="list__article">
+              <img
+                src="./el_dorado.jpeg"
+                alt="Picture of the board from The Quest for El Dorado"
+              />
+              <div class="article__summary">
+                <h2>The Quest for El Dorado: The RORT Review</h2>
+                <p>
+                  This clever deckbuilder combines the best of classic race
+                  games with a healthy splash of Dominion to make something
+                  great.
+                </p>
+                <div class="meta-information">
+                  <span class="meta-tag bg--orange txt--dark">Board Games</span>
+                  <span class="meta--author"
+                    >By <a href="">Nathan Minchow</a></span
+                  >
+                </div>
+              </div>
             </article>
           </li>
           <li>
-            <article>
-              <h2>The Quest for El Dorado: The RORT Review</h2>
-              <p>
-                This clever deckbuilder combines the best of classic race games
-                with a healthy splash of Dominion to make something great.
-              </p>
-              <span>GAMES</span>
-              <span>By Nathan Minchow</span>
+            <article class="list__article">
+              <img
+                src="./el_dorado.jpeg"
+                alt="Picture of the board from The Quest for El Dorado"
+              />
+              <div class="article__summary">
+                <h2>The Quest for El Dorado: The RORT Review</h2>
+                <p>
+                  This clever deckbuilder combines the best of classic race
+                  games with a healthy splash of Dominion to make something
+                  great.
+                </p>
+                <div class="meta-information">
+                  <span class="meta-tag bg--orange txt--dark">Board Games</span>
+                  <span class="meta--author"
+                    >By <a href="">Nathan Minchow</a></span
+                  >
+                </div>
+              </div>
             </article>
           </li>
           <li>
-            <article>
-              <h2>The Quest for El Dorado: The RORT Review</h2>
-              <p>
-                This clever deckbuilder combines the best of classic race games
-                with a healthy splash of Dominion to make something great.
-              </p>
-              <span>GAMES</span>
-              <span>By Nathan Minchow</span>
+            <article class="list__article">
+              <img
+                src="./el_dorado.jpeg"
+                alt="Picture of the board from The Quest for El Dorado"
+              />
+              <div class="article__summary">
+                <h2>The Quest for El Dorado: The RORT Review</h2>
+                <p>
+                  This clever deckbuilder combines the best of classic race
+                  games with a healthy splash of Dominion to make something
+                  great.
+                </p>
+                <div class="meta-information">
+                  <span class="meta-tag bg--orange txt--dark">Board Games</span>
+                  <span class="meta--author"
+                    >By <a href="">Nathan Minchow</a></span
+                  >
+                </div>
+              </div>
             </article>
           </li>
           <li>
-            <article>
-              <h2>The Quest for El Dorado: The RORT Review</h2>
-              <p>
-                This clever deckbuilder combines the best of classic race games
-                with a healthy splash of Dominion to make something great.
-              </p>
-              <span>GAMES</span>
-              <span>By Nathan Minchow</span>
+            <article class="list__article">
+              <img
+                src="./el_dorado.jpeg"
+                alt="Picture of the board from The Quest for El Dorado"
+              />
+              <div class="article__summary">
+                <h2>The Quest for El Dorado: The RORT Review</h2>
+                <p>
+                  This clever deckbuilder combines the best of classic race
+                  games with a healthy splash of Dominion to make something
+                  great.
+                </p>
+                <div class="meta-information">
+                  <span class="meta-tag bg--orange txt--dark">Board Games</span>
+                  <span class="meta--author"
+                    >By <a href="">Nathan Minchow</a></span
+                  >
+                </div>
+              </div>
             </article>
           </li>
           <li>
-            <article>
-              <h2>The Quest for El Dorado: The RORT Review</h2>
-              <p>
-                This clever deckbuilder combines the best of classic race games
-                with a healthy splash of Dominion to make something great.
-              </p>
-              <span>GAMES</span>
-              <span>By Nathan Minchow</span>
+            <article class="list__article">
+              <img
+                src="./el_dorado.jpeg"
+                alt="Picture of the board from The Quest for El Dorado"
+              />
+              <div class="article__summary">
+                <h2>The Quest for El Dorado: The RORT Review</h2>
+                <p>
+                  This clever deckbuilder combines the best of classic race
+                  games with a healthy splash of Dominion to make something
+                  great.
+                </p>
+                <div class="meta-information">
+                  <span class="meta-tag bg--orange txt--dark">Board Games</span>
+                  <span class="meta--author"
+                    >By <a href="">Nathan Minchow</a></span
+                  >
+                </div>
+              </div>
             </article>
           </li>
           <li>
-            <article>
-              <h2>The Quest for El Dorado: The RORT Review</h2>
-              <p>
-                This clever deckbuilder combines the best of classic race games
-                with a healthy splash of Dominion to make something great.
-              </p>
-              <span>GAMES</span>
-              <span>By Nathan Minchow</span>
+            <article class="list__article">
+              <img
+                src="./el_dorado.jpeg"
+                alt="Picture of the board from The Quest for El Dorado"
+              />
+              <div class="article__summary">
+                <h2>The Quest for El Dorado: The RORT Review</h2>
+                <p>
+                  This clever deckbuilder combines the best of classic race
+                  games with a healthy splash of Dominion to make something
+                  great.
+                </p>
+                <div class="meta-information">
+                  <span class="meta-tag bg--orange txt--dark">Board Games</span>
+                  <span class="meta--author"
+                    >By <a href="">Nathan Minchow</a></span
+                  >
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="list__article">
+              <img
+                src="./el_dorado.jpeg"
+                alt="Picture of the board from The Quest for El Dorado"
+              />
+              <div class="article__summary">
+                <h2>The Quest for El Dorado: The RORT Review</h2>
+                <p>
+                  This clever deckbuilder combines the best of classic race
+                  games with a healthy splash of Dominion to make something
+                  great.
+                </p>
+                <div class="meta-information">
+                  <span class="meta-tag bg--orange txt--dark">Board Games</span>
+                  <span class="meta--author"
+                    >By <a href="">Nathan Minchow</a></span
+                  >
+                </div>
+              </div>
             </article>
           </li>
         </ol>

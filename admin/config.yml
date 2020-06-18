@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
+local_backend: true
+
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
 
@@ -43,6 +45,24 @@ collections:
         valueField: "name"
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["review"] }
+      - { label: "Body", name: "body", widget: "markdown" }
+  # Videogame Reviews
+  - label: "Video Game Review"
+    name: "reviews.videogames"
+    folder: "reviews"
+    create: true
+    filter: {field: "tags", value: "videogame"}
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - label: "Post Author"
+        name: "author"
+        widget: "relation"
+        collection: "authors"
+        searchFields: ["name", "github"]
+        valueField: "name"
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["review", "videogame"] }
       - { label: "Body", name: "body", widget: "markdown" }
   # Our pages e.g. About
   - name: "pages"
