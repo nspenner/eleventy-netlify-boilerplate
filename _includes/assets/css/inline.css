@@ -1,7 +1,8 @@
 :root {
-	--primary: blue;
-	--secondary: white;
-	--background: rgb(232, 208, 200);
+	--primary: #2D7E7D;
+	--secondary: #eaf2f2;
+	--secondary-shade: #c0d8d8;
+	--background: rgb(255, 255, 255);
 }
 
 *, *:before, *:after {
@@ -114,7 +115,7 @@ header nav li a[href]:not(:hover) {
 }
 
 header nav li a[data-current="current item"] {
-	background-color: white;
+	background-color: var(--secondary);
 }
 
 /* Posts List */
@@ -122,7 +123,7 @@ article {
 	margin-bottom: 1em;
 	padding-bottom: 1em;
 	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid var(--secondary);
+	border-bottom: 1px solid var(--secondary-shade);
 }
 
 main > section > article > * {
