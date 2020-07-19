@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+section: reviews
+permalink: /reviews/index.html
+---
+<h1>{{ title }}</h1>
+
+{{ layoutContent | safe }}
+
+{% set reviewslist = collections.televisionReviews %}
+{% set filteredTags = ["review", "television"] %}
+{% include "components/reviewslist.njk" %}

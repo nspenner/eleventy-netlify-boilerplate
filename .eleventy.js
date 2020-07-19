@@ -78,6 +78,10 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByTags("review", "videogame");
   });
 
+  eleventyConfig.addCollection("televisionReviews", function (collectionApi) {
+    return collectionApi.getFilteredByTags("review", "television");
+  });
+
   eleventyConfig.addFilter("containsValue", function(value, array) {
     return array.includes(value);
   });
