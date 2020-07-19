@@ -5,5 +5,5 @@ date: 2017-01-01
 permalink: /reviews/television/index.html
 eleventyNavigation:
   key: Television Reviews
-  order: 5
+  order: 3
 ---

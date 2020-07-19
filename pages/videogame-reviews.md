@@ -5,5 +5,5 @@ date: 2017-01-01
 permalink: /reviews/videogames/index.html
 eleventyNavigation:
   key: Video Game Reviews
-  order: 4
+  order: 2
 ---
