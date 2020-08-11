@@ -6,9 +6,10 @@
 	<body>
 
 		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
+			<h1>
+				<a class="desktop-display" href="{{ '/' | url }}">{{ metadata.title }}</a>
+				<a class="mobile-display" href="{{ '/' | url }}">{{ metadata.abbreviatedTitle }}</a>
+			</h1>
 			{% include "components/nav.njk" %}
 		</header>
 

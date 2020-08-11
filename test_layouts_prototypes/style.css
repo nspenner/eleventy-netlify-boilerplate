@@ -334,8 +334,16 @@ a:visited {
     margin-top: .5rem;
 }
 
+.mobile-display {
+  display: none;
+}
+
 @media (max-width: 600px) {
   body {
     margin: 0;
+  }
+
+  .mobile-display {
+    display: auto;
   }
 }

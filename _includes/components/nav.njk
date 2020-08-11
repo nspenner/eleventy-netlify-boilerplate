@@ -1,5 +1,5 @@
-<nav>
-  {% set navPages = collections.all | eleventyNavigation %}
+{% set navPages = collections.all | eleventyNavigation %}
+<nav class="desktop-display">
   <ul>
   {%- for entry in navPages %}
     <li>
@@ -7,4 +7,13 @@
     </li>
   {%- endfor %}
   </ul>
+</nav>
+<nav class="mobile-display">
+  <select class="select" onChange="window.location.href=this.value">
+    {%- for entry in navPages %}
+      <option value="{{ entry.url | url }}" {% if entry.url == page.url %} selected{% endif %}>
+        {{ entry.title }}
+      </option>
+    {%- endfor %}
+  </select>
 </nav>
